@@ -1,5 +1,5 @@
 const { User, joiVerifyEmailSchema } = require("../../models");
-const { sendEmail } = require("../../helpers");
+const { sendEmail } = require("../../service");
 const { BadRequest } = require("http-errors");
 
 const resendVerifyEmail = async (req, res) => {
